@@ -5,6 +5,7 @@ import { map, switchMap, tap } from 'rxjs/operators';
 
 export interface Pokemon {
   id: number;
+  name: string;
   height: number;
   weight: number;
   types: string[];
@@ -69,6 +70,7 @@ export class PokemonService {
   private mapPokemon(data: any): Pokemon {
     return {
       id: data.id,
+      name: data.name,
       height: data.height,
       weight: data.weight,
       types: data.types.map((t: any) => t.type.name),

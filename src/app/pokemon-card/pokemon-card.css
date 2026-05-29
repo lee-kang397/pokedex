@@ -1,0 +1,25 @@
+.screen-text {
+      font-family: 'Press Start 2P', monospace;
+      color: #1A2A0A;
+      font-size: 8px;
+      text-align: center;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+    }
+
+    .screen-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      width: 100%;
+    }
+
+    .screen-stat {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 6px;
+      color: #1A2A0A;
+      background: rgba(0,0,0,0.12);
+      padding: 4px;
+      border-radius: 2px;
+      text-align: center;
+    }

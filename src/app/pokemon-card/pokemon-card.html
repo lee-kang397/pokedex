@@ -1,0 +1,13 @@
+@if (pokemon$ | async; as pokemon) {
+    <div class="screen-text">{{pokemon.name.toUpperCase()}}</div>
+            <div class="screen-text" style="font-size:6px; opacity:0.8;">No. {{pokemon.id}}</div>
+            <img src="{{pokemon.frontSprite}}">
+            <div class="screen-grid">
+              <div class="screen-stat">HT: {{pokemon.height}}</div>
+              <div class="screen-stat">WT: {{pokemon.weight}}</div>
+              <div class="screen-stat">TYPE: {{pokemon.types}}</div>
+            </div>
+
+} @else {
+    <div class="screen-text">LOADING...</div>
+}
